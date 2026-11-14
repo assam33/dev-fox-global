@@ -5,11 +5,11 @@ import ContactForm from "./ContactForm";
 import SocialLinks from "./SocialLinks";
 
 const valueClass = "font-head text-[1.25rem] font-medium text-white [overflow-wrap:anywhere]";
-const labelClass = "text-[0.92rem] text-[#9C98CC]";
+const labelClass = "text-[0.92rem] text-[#9AA3B8]";
 
 export default function Contact() {
   return (
-    <section id="contact" className="bg-deep py-18 text-[#C9C7E8] lg:py-26">
+    <section id="contact" className="dfx-contact py-18 text-[#C3CADB] lg:py-26">
       <Container className="grid gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-start lg:gap-20">
         <div>
           <h2 className={`${h2} max-w-[14ch] text-white`}>Tell us what you are building.</h2>

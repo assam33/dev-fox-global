@@ -4,7 +4,7 @@ import Container from "./Container";
 
 export default function About() {
   return (
-    <section id="about" className={`bg-paper ${sectionPad}`}>
+    <section id="about" className={`dfx-section-warm ${sectionPad}`}>
       <Container className="grid gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-start lg:gap-20">
         <div>
           <h2 className={`${h2} max-w-[16ch]`}>A small team that stays close to your project.</h2>
@@ -24,7 +24,7 @@ export default function About() {
 
         <dl>
           {commitments.map((item) => (
-            <div key={item.title} className="border-l-[3px] border-[#D7D9F7] py-6 pl-6 [&+&]:mt-1">
+            <div key={item.title} className="rounded-r-2xl border-l-[3px] border-brand bg-white/70 py-6 pl-6 pr-5 [&+&]:mt-3">
               <dt className="font-head text-[1.2rem] font-semibold text-ink">{item.title}</dt>
               <dd className="mt-[0.35rem]">{item.text}</dd>
             </div>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "@/assets/logo-mark.png";
+import logo from "@/assets/DevFox-fox-512.png";
 import { services, site } from "@/data/site";
 import Container from "./Container";
 import SocialLinks from "./SocialLinks";
@@ -10,12 +10,12 @@ const colClass = "flex flex-col items-start gap-[0.55rem]";
 
 export default function Footer() {
   return (
-    <footer className="bg-deeper pt-18 text-[#A9A6D3]">
+    <footer className="dfx-footer pt-18 text-[#A9B1C3]">
       <Container className="grid gap-9 pb-14 sm:grid-cols-2 sm:gap-12 lg:grid-cols-[minmax(0,1.6fr)_repeat(3,minmax(0,1fr))]">
         <div>
           <a href="#home" className="inline-flex items-center gap-[0.65rem]" aria-label="DevFox home">
             <Image src={logo} alt="" width={36} height={36} className="h-auto w-9" />
-            <span className="font-head text-[1.4rem] font-bold tracking-[-0.03em] text-white">DevFox</span>
+            <span className="font-head text-[1.4rem] font-bold tracking-[-0.03em] text-white">Dev<span className="text-brand">Fox</span></span>
           </a>
           <p className="mt-[1.1rem] max-w-88">
             A software company in Punjab, Pakistan, building web, mobile and custom software for clients worldwide.

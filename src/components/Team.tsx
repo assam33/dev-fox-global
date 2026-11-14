@@ -5,7 +5,7 @@ import TeamCard, { SliceClipDefs } from "./TeamCard";
 
 export default function Team() {
   return (
-    <section id="team" className={sectionPad}>
+    <section id="team" className={`dfx-section-light ${sectionPad}`}>
       <SliceClipDefs />
       <Container>
         <div className="mb-10 max-w-152 lg:mb-14">

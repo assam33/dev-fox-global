@@ -34,12 +34,12 @@ export default function SocialLinks({
             aria-label={label(who)}
             className={cn(
               plain
-                ? "grid size-9 place-items-center rounded-lg text-ink transition-colors hover:text-brand"
+                ? "grid size-9 place-items-center rounded-lg text-ink transition-colors hover:text-brand-ink"
                 : "grid size-[42px] place-items-center rounded-full border-[1.5px] transition-colors",
               !plain &&
                 (onDark
-                ? "border-white/28 text-white hover:border-white hover:bg-white hover:text-deep"
-                  : "border-line text-ink hover:border-brand hover:bg-brand hover:text-white"),
+                ? "border-white/28 text-white hover:border-white hover:bg-brand hover:text-ink hover:border-brand"
+                  : "border-line text-ink hover:border-brand hover:bg-brand hover:text-ink"),
             )}
           >
             <SocialIcon name={name} className={plain ? "size-5" : "size-[18px]"} />

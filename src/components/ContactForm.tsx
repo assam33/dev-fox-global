@@ -140,7 +140,7 @@ export default function ContactForm() {
       <button type="submit" disabled={sending} className={cn(btnPrimary, "mt-1 w-full py-4 disabled:cursor-progress disabled:opacity-70")}>
         {sending && (
           <span
-            className="size-[18px] animate-spin rounded-full border-[2.5px] border-white/40 border-t-white"
+            className="size-[18px] animate-spin rounded-full border-[2.5px] border-ink/30 border-t-ink"
             aria-hidden="true"
           />
         )}

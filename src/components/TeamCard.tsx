@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "@/assets/logo-mark.png";
+import logo from "@/assets/DevFox-fox-512.png";
 import { site, type TeamMember } from "@/data/site";
 import { FACE_TARGET, SLICE_ASPECT, SLICE_CLIP_ID, slicePolygons } from "@/lib/slices";
 import SocialLinks from "./SocialLinks";
@@ -101,7 +101,7 @@ export default function TeamCard({ member }: { member: TeamMember }) {
         <p className="mt-4 font-head font-semibold text-ink">{site.name}</p>
         <a
           href={`mailto:${email}`}
-          className="block text-[0.9rem] text-body transition-colors [overflow-wrap:anywhere] hover:text-brand"
+          className="block text-[0.9rem] text-body transition-colors [overflow-wrap:anywhere] hover:text-brand-ink"
         >
           {email}
         </a>
